@@ -50,7 +50,7 @@ const todoList = () => {
     return list
       .map(
         (todo) =>
-          `[${todo.completed ? "X" : ""}] ${todo.title} ${
+          `[${todo.completed ? "X" : " "}] ${todo.title} ${
             todo.dueDate == new Date().toISOString().split("T")[0]
               ? ""
               : todo.dueDate
